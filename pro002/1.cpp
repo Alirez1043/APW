@@ -1,7 +1,8 @@
-
 #include <iostream>
 #include <cstdlib>
+#include <algorithm>
 #include <string>
+
 using namespace std;
 
 class Date {
@@ -19,6 +20,7 @@ public:
     int get_month() { return month; }
     int get_year() { return year; }
     void inc_one_day();
+    
 private:
     int day;
     int month;
@@ -161,15 +163,13 @@ Date str_to_date(string s) {
 
 int main()
 {
-    string s1 = "2/1/1";
-    string s2 = "1/1/1";
-    Date d1 = str_to_date(s1);
-    Date d2 = str_to_date(s2);
-    Date d3(1, 2, 1);
+    Date d1 (12, 5, 1399);
+    Date d2 (12, 6, 1200);
+    cout << d1.compare(d2) << endl;
+    cout << d2.compare(d1) << endl;
+    cout << days_between(d1,d2) << endl;
 
-    cout << d1.day_of_week() << endl;
-    cout << d2.day_of_week() << endl;
+    Date d3 (12, 4, 1399);
     cout << d3.day_of_week() << endl;
     return 0;
-
 }
