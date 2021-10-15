@@ -1,0 +1,3 @@
+F:/C++/universityAPW/pro002/cmake-build-debug/CMakeFiles/pro002.dir
+F:/C++/universityAPW/pro002/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/C++/universityAPW/pro002/cmake-build-debug/CMakeFiles/rebuild_cache.dir
