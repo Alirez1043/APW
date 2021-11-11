@@ -50,7 +50,7 @@ private:
 };
 
 int main() {
-    Pentagon pentagon(10, 5);
+    Pentagon pentagon(5, 3);
     cout << "Pentagon area is: " << pentagon.area() << endl;
     cout << "Pentagon perimeter is: " << pentagon.perimeter() << endl;
 }

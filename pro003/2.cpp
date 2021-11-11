@@ -63,7 +63,7 @@ private:
 
 int main() {
 
-    ThreeDPentagon pentagon3D(10, 5, 2);
+    ThreeDPentagon pentagon3D(5,3,4);
     cout << "Volume of the 3D pentagon is: " << pentagon3D.volume();
 }
 
