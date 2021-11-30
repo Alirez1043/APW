@@ -11,7 +11,6 @@ public:
 
 private:
     string m_error;
-    int m_working_hour;
 };
 
 EmployeeException::EmployeeException(string err) {
@@ -49,7 +48,7 @@ private:
 
 int FullTime::earning(int hour) const {
     if (hour < 0) {
-        throw EmployeeException("Full time minus working hour");
+        throw EmployeeException("Full time negative working hour");
     } else if (hour < 140) {
         throw EmployeeException("Full time employee less than 140 hours work");
     }
@@ -71,7 +70,7 @@ private:
 
 int PartTime::earning(int hour) const {
     if (hour < 0) {
-        throw EmployeeException("Part time minus working hour");
+        throw EmployeeException("Part time negative working hour");
     }
     return m_salary_per_hour * hour;
 }
